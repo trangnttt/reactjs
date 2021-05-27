@@ -1,0 +1,43 @@
+Cấu trúc thư mục phát triển
+
+src
+  assets
+    scss
+    images
+
+  components
+    Header
+      index.js
+    Footer
+      index.js
+    Button
+      index.js
+    ...
+  layouts
+    LayoutDefault.js
+    LayoutSidebar.js
+
+  routes
+    index.js
+
+  pages
+    about
+      index.js
+    news
+      index.js
+    contact
+      index.js
+  reducers
+  api
+  utils
+
+  App.js
+
+  Cơ bản mai mốt bổ sung sau
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+.menu {
+    background: #eaeaea;
+    text-align: center;
+    margin-bottom: 0;
+
+    &__item {
+        display: inline-block;
+        width: 120px;
+        height: auto;
+        line-height: 40px;
+        margin-left: -5px;
+
+        &:hover {
+            background: #5a88ca;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #6e6a6a;
+        display: block;
+        padding: 10px 20px;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}

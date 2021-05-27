@@ -1,0 +1,59 @@
+﻿1. Props mục đích truyền dữ liệu qua lại giữa các component thông qua tham số
+
+Ví dụ:
+const Component1 = (props) => {
+  return (
+      <div>{props.name}</div>
+  )
+}
+
+<Component name={son} />
+
+const Component1 = (attr1, attr2, attr3) => {
+  return (
+      <div>{attr1}</div>
+      <div>{attr2}</div>
+      <div>{attr3}</div>
+  )
+}
+
+<Component1 attr1="A1" attr2="A3" attr3="A3"  />
+
+Set mặt định props (defaultProps)
+
+const Component2 = ({ abc }) => {
+    return (
+        <div>
+            {abc}
+        </div>
+    );
+}
+
+Component2.defaultProps = {
+    abc: 0
+}
+
+
+Tham chiếu props load 1 component
+
+const Component3 = ({ component1: Component1, component2: Component2 }) => {
+    return (
+        <div>
+            <Component1 />
+            <Component2 />
+        </div>
+    );
+}
+
+<Component3  component1={Component} component2={Component} />
+
+const Component4 = (Component1, Component2) => {
+    return (
+        <div>
+            <Component2 />
+            <Component2 />
+        </div>
+    );
+}
+
+<Component4  Component1={Component} Component2={Component} />

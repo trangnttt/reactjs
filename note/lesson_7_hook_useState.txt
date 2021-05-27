@@ -1,0 +1,8 @@
+﻿1.useState()
+
+const [state, setSate] = useState('giá trị truyền vào đây[array, text, object,...]')
+Là 1 mãng có 2 phần tử
+
+state: Biến state
+setState: Hàm State
+

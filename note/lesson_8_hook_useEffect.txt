@@ -1,0 +1,36 @@
+﻿1. useEffect()
+
+*cú pháp:
+
+useEffect(effectFunction, arrayDependencies)
+
+*Giải thích
+effectFunction: là 1 function
+arrayDependencies: mãng, mục đích để xác định khi nào effectFunction được chạy thôi.
+
+ví dụ:
+
+import React, {useState, useEffect} from "react";
+
+const Home = () => {
+  const [isLoading, setLoading] = useState(false);
+  const [product, setProduct] = useState();
+
+  useEffect(() => {
+		setLoading = true
+		const getData = async() => {
+			const res = await  = axios.get('https://jsonplaceholder.typicode.com/todos/')
+			setProduct  = res.data
+		}
+    	
+		return () => {
+			setLoading = false
+    }
+  }, [product]);
+
+  return <div>Home 5</div>;
+};
+
+export default Home;
+
+

@@ -1,0 +1,25 @@
+.service {
+    &__list {
+        display: flex;
+        padding: 20px;
+
+        &--item {
+            color: #fff;
+            font-size: 25px;
+            font-weight: 200;
+            padding: 20px 10px;
+            text-align: center;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            width: 25%;
+        }
+
+        &--icon {
+            font-size: 50px;
+        }
+
+        &--text {
+            margin-bottom: 5px;
+        }
+    }
+}

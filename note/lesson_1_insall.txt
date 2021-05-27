@@ -1,0 +1,15 @@
+1. Cài đặt react
+  yarn create react-app my-app
+  *Chý ý my-app tên dự án
+
+2. Cài React-router-dom
+  yarn add react-router-dom
+  
+  * Tham khảo: https://reactrouter.com/web/guides/quick-start
+
+3. Cài axios
+  yarn add axios
+
+  * Cái này dùng sau gọi api từ serve
+
+Cơ bản trước bao nhiêu đây bổ sung sau

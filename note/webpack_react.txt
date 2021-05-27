@@ -1,0 +1,54 @@
+﻿- Webpack là công cụ cực kỳ phổ biến và mạnh mẽ giúp tổ chức mã nguồn Javascript theo nhiều Module
+- Babel là công cụ giúp compile mã nguồn JSX và Javascript ES6+ trong project trở thành phiên bản
+ Javscript mà mọi trình duyệt có thể hiểu được.
+
+
+1.papackage.json
+yarn init -y
+
+2. Install reactjs
+yarn add react
+yarn add react-dom
+yarn add react-router-dom
+
+3.Webpack
+
+yarn add webpack --dev
+yarn add webpack-cli --dev
+yarn add webpack-dev-server --dev
+yarn add html-webpack-plugin --dev
+yarn add copy-webpack-plugin --dev
+* Tham khảo: https://webpack.js.org/
+
+4.Babel
+
+yarn add @babel/core --dev //là API, giúp chuyển code ES5+ thành phiên bản Javascript tương thích
+yarn add @babel/preset-env --dev //cho phép sử dụng Javascript mới nhất, tùy chọn môi trường và tự động kích hoạt các plugin cần thiết
+yarn add @babel/preset-react --dev //giúp chuyển JSX (cú pháp của React) thành javascript.
+yarn add babel-loader --dev //webpack helper giúp chuyển code dựa trên preset.
+
+5.Hot loader
+
+yarn add react-hot-loader --dev
+yarn add @hot-loader/react-dom --dev
+
+6.Scss, css, style
+
+yarn add node-sass --dev
+yarn add sass-loader --dev
+yarn add style-loader --dev
+yarn add css-loader --dev
+
+7.Tạo file .babelrc
+
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "plugins": [
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-proposal-class-properties",
+    "react-hot-loader/babel"
+  ]
+}
+
+
+
