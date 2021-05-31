@@ -1,0 +1,3 @@
+BrowserRouter => Khi người dùng gửi 1 rquest nó qua thằng này quản lý từ thằng này nó match đến
+<Route> xong nó sẽ gọi đến component của router đó
+Xong nó bắt đầu render component

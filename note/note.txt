@@ -1,0 +1,2 @@
+﻿* scss
+https://github.com/georgeroubie/SCSS-7-1-pattern/tree/master/assets 

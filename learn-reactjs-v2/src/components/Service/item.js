@@ -5,9 +5,9 @@ const ServiceItem = (props) => {
         backgroundColor: props.bgColor
     };
     return (
-        <li className="service__list--item" style={itemStyle}>
-            <i className={'service__list--icon ' + props.icon}></i>
-            <p className="service__list--text"> {props.info}</p>
+        <li className="p-service__list--item" style={itemStyle}>
+            <i className={'p-service__list--icon ' + props.icon}></i>
+            <p className="p-service__list--text"> {props.info}</p>
         </li>
     )
 }

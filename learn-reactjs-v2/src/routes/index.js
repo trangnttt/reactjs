@@ -15,6 +15,8 @@ import Home from "../pages/Home"
 import About from "../pages/About"
 import News from "../pages/News"
 import Contact from "../pages/Contact"
+import NotFound from '../pages/Error/NotFound'
+// props
 import RouteComponent from '../components/Route'
 
 export default () => {
@@ -22,44 +24,12 @@ export default () => {
     <Router>
       <Switch>
         <RouteComponent exact path="/" layout={DefaultLayout} component={Home} />
-        <RouteComponent path="/about" layout={AboutLayout} component={About} />
-      
-        <RouteComponent path="/about/son" layout={AboutLayout} component={About} />
-        <RouteComponent path="/news" layout={NewsLayout} component={News} />
-        <RouteComponent path="/contact" layout={ContactLayout} component={Contact} />
+        <RouteComponent exact path="/about" layout={AboutLayout} component={About} />
+        <RouteComponent exact path="/news" layout={AboutLayout} component={About} />
+        <RouteComponent exact path="/news/post" layout={AboutLayout} component={News} />        <RouteComponent path="/news" layout={NewsLayout} component={News} />
+        <RouteComponent exact path="/contact" layout={ContactLayout} component={Contact} />
+        <RouteComponent path="*" layout={DefaultLayout} component={NotFound} />
       </Switch>
     </Router>
-    // <Router>
-    //   <Switch>
-    //     <Route exact path={["/"]}>
-    //       <DefaultLayout>
-    //         <Switch>
-    //           <Route path="/" exact component={Home} />
-    //         </Switch>
-    //       </DefaultLayout>
-    //     </Route>
-    //     <Route path={["/about"]}>
-    //       <AboutLayout>
-    //         <Switch>
-    //           <Route path="/about" component={About} />
-    //         </Switch>
-    //       </AboutLayout>
-    //     </Route>
-    //     <Route path={["/news"]}>
-    //       <NewsLayout>
-    //         <Switch>
-    //           <Route path="/news" component={News} />
-    //         </Switch>
-    //       </NewsLayout>
-    //     </Route>
-    //     <Route path={["/contact"]}>
-    //       <ContactLayout>
-    //         <Switch>
-    //           <Route path="/contact" component={Contact} />
-    //         </Switch>
-    //       </ContactLayout>
-    //     </Route>
-    //   </Switch>
-    // </Router>
   )
 }
