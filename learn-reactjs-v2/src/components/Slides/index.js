@@ -18,7 +18,7 @@ const Slides = () => {
                 <input type="radio" name="radio-btn" id="img-2" />
                 <li className="c-slides__item">
                     <div className="c-slides__img">
-                        <img src="https://freshdesignweb.com/demo/template/ustora/img/h4-slide2.png" />
+                        <img src="../../assets/images/h4-slide2.png" />
                     </div>
                     <div className="c-slides__btn">
                         <label htmlFor="img-1" className="c-slides__btn--prev">&#x2039;</label>
@@ -29,7 +29,7 @@ const Slides = () => {
                 <input type="radio" name="radio-btn" id="img-3" />
                 <li className="c-slides__item">
                     <div className="c-slides__img">
-                        <img src="https://freshdesignweb.com/demo/template/ustora/img/h4-slide3.png" />
+                        <img src="../../assets/images/h4-slide3.png" />
                     </div>
                     <div className="c-slides__btn">
                         <label htmlFor="img-2" className="c-slides__btn--prev">&#x2039;</label>
@@ -40,7 +40,7 @@ const Slides = () => {
                 <input type="radio" name="radio-btn" id="img-4" />
                 <li className="c-slides__item">
                     <div className="c-slides__img">
-                        <img src="https://freshdesignweb.com/demo/template/ustora/img/h4-slide4.png" />
+                        <img src="../../assets/images/h4-slide4.png" />
                     </div>
                     <div className="c-slides__btn">
                         <label htmlFor="img-3" className="c-slides__btn--prev">&#x2039;</label>

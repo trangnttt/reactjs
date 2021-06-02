@@ -1,10 +1,12 @@
 import React from 'react'
-// import Routes from './routes/'
+import CartContext from './contexts/CartContext'
 import Routes from './routes/'
 const App = () => {
-    return(
+    return (
         <div className="wrapper">
-            <Routes />
+            <CartContext> 
+                <Routes />
+            </CartContext>
         </div>
     )
 }

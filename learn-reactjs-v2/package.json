@@ -8,14 +8,18 @@
     "build": "webpack --mode production"
   },
   "dependencies": {
+    "@babel/runtime": "^7.14.0",
+    "axios": "^0.21.1",
     "lodash": "^4.17.21",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",
+    "react-slick": "^0.28.1",
     "watch-run": "^1.2.5"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
+    "@babel/plugin-transform-runtime": "^7.14.3",
     "@babel/preset-env": "^7.14.2",
     "@babel/preset-react": "^7.13.13",
     "@hot-loader/react-dom": "^17.0.1",

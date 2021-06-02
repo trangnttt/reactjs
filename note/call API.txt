@@ -1,0 +1,20 @@
+const [data, setData] = useState([]);
+    useEffect(() => {
+        const fetchData = async () => {
+            const result = await axios(
+                'https://hn.algolia.com/api/v1/search?query=redux',
+            );
+            setData(result.data);
+        };
+        fetchData();
+    }, []
+        // cách viết API thứ 2
+        // (async function () {
+        //     const products = await axios.get(`https://reqres.in/api/users`)
+        //     console.log(products)
+        // }
+        // )()}
+    )
+
+map có trả về giá trị
+for duyệt qua từng phần tử nhưng ko có trả về giá trị

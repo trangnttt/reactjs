@@ -1,7 +1,7 @@
 import React from 'react'
-import Service from '../../components/Service'
-import Slides from '../../components/Slides'
-import ProductList  from '../../components/Product/ProductList'
+import Service from '@/components/Service'
+import Slides from '@/components/Slides'
+import ProductList  from '@/components/Product/ProductList'
 
 function Home() {
   return (
@@ -10,6 +10,9 @@ function Home() {
       <div className="container">
         <Service />
         <ProductList />
+
+        <h3>Cart</h3>
+
       </div>
     </div>
   );
