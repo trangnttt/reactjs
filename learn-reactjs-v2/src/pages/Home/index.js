@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useRef } from 'react'
 import Service from '@/components/Service'
 import Slides from '@/components/Slides'
 import ProductList from '@/components/Product/ProductList'
@@ -6,8 +6,14 @@ import { CartContext } from '@/contexts/CartContext'
 
 function Home() {
   const { dataCart, increaseQtyCart, decreaseQtyCart, deleteCart } = useContext(CartContext);
+  const btnRef = useRef(null);
+  const onButtonClick = () => {
+      btnRef.current.classList.toggle('btn-blue');
+  };
   return (
     <div className="main">
+      <button onClick={onButtonClick} ref={btnRef}  >change btn blue</button>
+
       <Slides />
       <div className="container">
         <Service />
@@ -30,7 +36,7 @@ function Home() {
                 <td>{data.email}</td>
                 <td>
                   <button onClick={() => decreaseQtyCart(data)}> - </button>
-                  <span> {data.qty} </span>
+                  <input type="text" value={data.qty} />
                   <button onClick={() => increaseQtyCart(data)}> + </button>
                 </td>
                 <td><button onClick={() => deleteCart(data)}>Delete</button></td>
