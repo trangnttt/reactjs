@@ -37,8 +37,8 @@ const CartProvider = (props) => {
       return prev + current.qty
     }, 0);
     dataCart.total = sum;
-    const test = { total: sum, data: dataCart.data }
-    setDataCart(test);
+    const updateData = { total: sum, data: dataCart.data }
+    setDataCart(updateData);
   }
 
   const decrease = (data) => {
@@ -50,8 +50,8 @@ const CartProvider = (props) => {
         return prev + current.qty
       }, 0);
       dataCart.total = sum;
-      const datas = { total: sum, data: dataCart.data }
-      setDataCart(datas);
+      const updateData = { total: sum, data: dataCart.data }
+      setDataCart(updateData);
     }
   }
 
@@ -64,8 +64,8 @@ const CartProvider = (props) => {
       return prev + current.qty
     }, 0);
     dataCart.total = sum;
-    const datas = { total: sum, data: dataCart.data }
-    setDataCart(datas);
+    const updateData = { total: sum, data: dataCart.data }
+    setDataCart(updateData);
   }
 
   return (
