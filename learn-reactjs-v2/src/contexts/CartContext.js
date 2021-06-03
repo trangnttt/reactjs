@@ -1,9 +1,11 @@
-import { compact } from 'lodash';
-import React, { createContext, useState } from 'react'
+import React, { createContext, useState, useReducer } from 'react'
 export const CartContext = createContext();
+
 
 const CartProvider = (props) => {
   const [dataCart, setDataCart] = useState({ total: 0, data: [] });
+
+
   const addCart = (item) => {
     const { id, email } = item;
     const itemData = { id: id, email: email, qty: 1 };

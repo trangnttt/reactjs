@@ -3,7 +3,7 @@ import axios from 'axios';
 import Slider from "react-slick";
 import { CartContext } from '@/contexts/CartContext'
 const ProductItem = () => {
-    // slider
+    // slider settings
     const settings = {
         dots: true,
         infinite: true,
