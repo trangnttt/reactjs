@@ -29,7 +29,7 @@ const CartProvider = (props) => {
     dataCart.total = sum;
   }
 
-  const increase = (data) => {
+  const increaseQtyCart  = (data) => {
     const objIndex = dataCart.data.findIndex(obj => obj.id == data.id)
     const qtyUpdate = data.qty + 1;
     dataCart.data[objIndex].qty = qtyUpdate;
@@ -41,7 +41,7 @@ const CartProvider = (props) => {
     setDataCart(updateData);
   }
 
-  const decrease = (data) => {
+  const decreaseQtyCart = (data) => {
     if (data.qty > 0) {
       const objIndex = dataCart.data.findIndex(obj => obj.id == data.id)
       const qtyUpdate = data.qty - 1;
@@ -55,7 +55,7 @@ const CartProvider = (props) => {
     }
   }
 
-  const erase = (data) => {
+  const eraseCart = (data) => {
     var index = dataCart.data.findIndex(obj => obj.id == data.id)
     if (index > -1) {
       dataCart.data.splice(index, 1);
@@ -69,7 +69,7 @@ const CartProvider = (props) => {
   }
 
   return (
-    <CartContext.Provider value={{ addCart, increase, decrease, erase, dataCart }}>
+    <CartContext.Provider value={{ addCart, increaseQtyCart, decreaseQtyCart, eraseCart, dataCart }}>
       {props.children}
     </CartContext.Provider>
   )

@@ -5,7 +5,7 @@ import ProductList from '@/components/Product/ProductList'
 import { CartContext } from '@/contexts/CartContext'
 
 function Home() {
-  const { dataCart, increase, decrease, erase } = useContext(CartContext);
+  const { dataCart, increaseQtyCart, decreaseQtyCart, eraseCart } = useContext(CartContext);
   console.log('dataCart home', dataCart)
   return (
     <div className="main">
@@ -30,11 +30,11 @@ function Home() {
                 <td>{data.id}</td>
                 <td>{data.email}</td>
                 <td>
-                  <button onClick={() => decrease(data)}> - </button>
+                  <button onClick={() => decreaseQtyCart(data)}> - </button>
                   <span> {data.qty} </span>
-                  <button onClick={() => increase(data)}> + </button>
+                  <button onClick={() => increaseQtyCart(data)}> + </button>
                 </td>
-                <td><button onClick={() => erase(data)}>Delete</button></td>
+                <td><button onClick={() => eraseCart(data)}>Delete</button></td>
               </tr>
             ))}
           </tbody>
