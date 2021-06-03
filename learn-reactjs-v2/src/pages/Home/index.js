@@ -5,8 +5,7 @@ import ProductList from '@/components/Product/ProductList'
 import { CartContext } from '@/contexts/CartContext'
 
 function Home() {
-  const { dataCart, increaseQtyCart, decreaseQtyCart, eraseCart } = useContext(CartContext);
-  console.log('dataCart home', dataCart)
+  const { dataCart, increaseQtyCart, decreaseQtyCart, deleteCart } = useContext(CartContext);
   return (
     <div className="main">
       <Slides />
@@ -34,7 +33,7 @@ function Home() {
                   <span> {data.qty} </span>
                   <button onClick={() => increaseQtyCart(data)}> + </button>
                 </td>
-                <td><button onClick={() => eraseCart(data)}>Delete</button></td>
+                <td><button onClick={() => deleteCart(data)}>Delete</button></td>
               </tr>
             ))}
           </tbody>
