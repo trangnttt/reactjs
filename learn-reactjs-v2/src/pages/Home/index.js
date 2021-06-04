@@ -3,15 +3,24 @@ import Service from '@/components/Service'
 import Slides from '@/components/Slides'
 import ProductList from '@/components/Product/ProductList'
 import { CartContext } from '@/contexts/CartContext'
+import Component1 from '@/components/Component1'
 
 function Home() {
   const { dataCart, increaseQtyCart, decreaseQtyCart, deleteCart } = useContext(CartContext);
   const btnRef = useRef(null);
+  const inputRef = useRef(null);
   const onButtonClick = () => {
       btnRef.current.classList.toggle('btn-blue');
   };
+
+  const testforwardRef = () => {
+    console.log('testforwardRef')
+    inputRef.current.message2()
+  }
+
   return (
     <div className="main">
+
       <button onClick={onButtonClick} ref={btnRef}  >change btn blue</button>
 
       <Slides />
@@ -36,7 +45,9 @@ function Home() {
                 <td>{data.email}</td>
                 <td>
                   <button onClick={() => decreaseQtyCart(data)}> - </button>
-                  <input type="text" value={data.qty} />
+                  <Component1 ref={inputRef} />
+                  <button onClick={testforwardRef}>testforwardRef</button>
+                  <input type="text" defaultValue={data.qty} />
                   <button onClick={() => increaseQtyCart(data)}> + </button>
                 </td>
                 <td><button onClick={() => deleteCart(data)}>Delete</button></td>
