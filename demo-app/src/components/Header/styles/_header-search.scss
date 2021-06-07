@@ -4,7 +4,7 @@
 
     &__key {
         width: 80%;
-        border: 1px solid rgba(223, 231, 246, 1);
+        border: 1px solid $gray-300;
         border-right: none;
         padding: 15px;
         height: 100%;
@@ -17,7 +17,7 @@
         min-width: 40px;
         height: auto;
         border: 0;
-        background: rgba(13, 82, 214, 1);
+        background: $blue;
         text-align: center;
         color: #fff;
         border-radius: 0 5px 5px 0;

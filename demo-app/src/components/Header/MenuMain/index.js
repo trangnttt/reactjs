@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles/_menuMain.scss'
+import './styles/menu-main.scss'
 const MenuMain = () => {
     return (
         <div className="wrapper">

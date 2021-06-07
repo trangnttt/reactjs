@@ -1,6 +1,7 @@
 .header-top {
-    background-color: #fff;
-
+    background-color: $white;
+    position: relative;
+    z-index: 2;
     &__row {
         display: flex;
         justify-content: space-between;
@@ -9,6 +10,10 @@
 
 .menu-top {
     height: 35px;
+
+    .is-active {
+        color: $blue;
+    }
 
     &__item {
         display: inline-block;
@@ -27,13 +32,10 @@
         font-size: 13px;
         line-height: 35px;
         padding: 5px;
-        -webkit-transition: color 0.15s;
-        -moz-transition: color 0.15s;
-        -o-transition: color 0.15s;
         transition: color 0.15s;
 
         &:hover {
-            color: blue;
+            color: $blue;
         }
     }
 
@@ -41,8 +43,4 @@
         margin-right: 5px;
         font-size: 14px;
     }
-}
-
-.is-active {
-    color: blue;
 }

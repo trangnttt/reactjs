@@ -1,11 +1,11 @@
 .footer-copy {
-    background: #3a4754;
+    background: $blue-600;
     padding: 15px;
     width: 100%;
     overflow: hidden;
     margin: 0 auto;
     text-align: center;
-    color: rgba(139, 145, 152, 1);
+    color: $gray-200;
 
     &__left {
         float: left;

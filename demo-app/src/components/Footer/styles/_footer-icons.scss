@@ -1,12 +1,12 @@
 .footer-icon {
-    background: rgba(238, 238, 238, 1);
+    background: $gray-100;
     padding: 15px;
     text-align: center;
 
     &__item  {
-        background: rgba(13, 82, 214, 1);
+        background: $blue;
         border-radius: 99px;
-        color: white;
+        color: $white;
         border: 0;
         height: 40px;
         width: 40px;

@@ -1,6 +1,6 @@
 .footer-menu {
     padding: 20px;
-    background-color: rgba(248, 248, 248, 1);
+    background-color: $white-200;
 
     &__row {
         display: grid;
@@ -9,7 +9,7 @@
     }
 
     &__column {
-        border-right: 1px solid rgba(226, 226, 226, 1);
+        border-right: 1px solid $white;
 
         &:last-child {
             border-right: 0;
@@ -22,7 +22,7 @@
         width: 115px;
         padding-bottom: 5px;
         margin-bottom: 20px;
-        border-bottom: 1px solid rgba(233, 102, 49, 1);
+        border-bottom: 1px solid $orange;
     }
 
     &__sub {
@@ -38,7 +38,7 @@
         margin-bottom: 10px;
 
         &:hover {
-            color: orange;
+            color: $orange;
         }
     }
 }

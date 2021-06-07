@@ -3,11 +3,11 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-  entry:  ['./src/index.js'],
+  entry: ['./src/index.js'],
   output: {
-    path: path.join(__dirname, "/dist"), 
-    filename: "[name].[contenthash].js", 
-    publicPath:'/',
+    path: path.join(__dirname, "/dist"),
+    filename: "[name].[contenthash].js",
+    publicPath: '/',
     clean: true,
   },
   devServer: {
@@ -31,7 +31,13 @@ module.exports = {
       },
       {
         test: /\.(scss|css)$/,
-        use: [{loader:"style-loader"} , {loader:"css-loader"}, {loader:"sass-loader"}],
+        use: [{ loader: "style-loader" }, { loader: "css-loader" }, { loader: "sass-loader" },
+        {
+          loader: 'sass-resources-loader',
+          options: {
+            resources: './src/assets/abstracts/_abstracts.scss',
+          }
+        }],
       },
       {
         test: /\.(woff|woff2|eot|ttf|jpg|png|gif|svg)$/,
@@ -40,8 +46,8 @@ module.exports = {
     ],
   },
   optimization: {
-    runtimeChunk: "single", 
-    splitChunks: { 
+    runtimeChunk: "single",
+    splitChunks: {
       cacheGroups: {
         vendor: {
           test: /[\\/]node_modules[\\/]/,

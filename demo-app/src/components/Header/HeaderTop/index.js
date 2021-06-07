@@ -1,5 +1,4 @@
 import React from 'react'
-import '../styles/header.scss'
 import MenuTop from './MenuTop'
 import MoreMenu from './MoreMenu'
 import Language from './Language'

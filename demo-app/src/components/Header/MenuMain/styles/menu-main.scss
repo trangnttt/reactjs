@@ -74,18 +74,14 @@
     &--right {
         float: right;
     }
-}
 
-.is-active {
-    color: rgba(51, 51, 51, 1);
-    background-color: rgba(254, 212, 48, 1);
-
-    &:hover {
-        background-color: #fff !important;
-        color: rgba(51, 51, 51, 1) !important;
-    }
-
-    .menu-main__dropdown-btn {
+    .is-active {
         color: rgba(51, 51, 51, 1);
+        background-color: rgba(254, 212, 48, 1);
+
+        &:hover {
+            background-color: #fff !important;
+            color: rgba(51, 51, 51, 1) !important;
+        }
     }
 }
