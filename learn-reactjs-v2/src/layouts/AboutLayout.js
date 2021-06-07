@@ -9,7 +9,7 @@ const AboutLayout = (props) => {
         <div>
             <Header />
             { props.children}
-            About page
+            {/* About page
             <br />
             <Link to="/about/sub1">Sub1</Link>
             <Link to="/about/sub2">Sub2</Link>
@@ -18,7 +18,7 @@ const AboutLayout = (props) => {
             </Route>
             <Route exact path="/about/sub2">
                 <div>Sub2</div>
-            </Route>
+            </Route> */}
             <Footer />
         </div>
     )

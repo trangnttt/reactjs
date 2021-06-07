@@ -1,8 +1,10 @@
 import React from 'react'
+import LoadingPage from '@/components/LoadingPage'
 function Contact() {
     return (
         <div>
-            <h2>Contact</h2>
+            <h1>Contact</h1>
+            <LoadingPage />
         </div>
     );
 }
