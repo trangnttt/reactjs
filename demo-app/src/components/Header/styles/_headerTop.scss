@@ -1,0 +1,48 @@
+.header-top {
+    background-color: #fff;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.menu-top {
+    height: 35px;
+
+    &__item {
+        display: inline-block;
+        position: relative;
+
+        &:hover {
+            .dropdown-menu {
+                opacity: 1;
+                top: 45px;
+                visibility: visible;
+            }
+        }
+    }
+
+    &__link {
+        font-size: 13px;
+        line-height: 35px;
+        padding: 5px;
+        -webkit-transition: color 0.15s;
+        -moz-transition: color 0.15s;
+        -o-transition: color 0.15s;
+        transition: color 0.15s;
+
+        &:hover {
+            color: blue;
+        }
+    }
+
+    &__icon {
+        margin-right: 5px;
+        font-size: 14px;
+    }
+}
+
+.is-active {
+    color: blue;
+}

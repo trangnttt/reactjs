@@ -1,0 +1,27 @@
+.header-search {
+    width: 35%;
+    display: flex;
+
+    &__key {
+        width: 80%;
+        border: 1px solid rgba(223, 231, 246, 1);
+        border-right: none;
+        padding: 15px;
+        height: 100%;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        color: #9dbfaf;
+    }
+
+    &__btn {
+        min-width: 40px;
+        height: auto;
+        border: 0;
+        background: rgba(13, 82, 214, 1);
+        text-align: center;
+        color: #fff;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        font-size: 20px;
+    }
+}

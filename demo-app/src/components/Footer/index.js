@@ -1,4 +1,5 @@
 import React from 'react'
+import './styles/footer.scss'
 import MostView from './MostView'
 import FooterIcons from './FooterIcons'
 import FooterMenu from './FooterMenu'

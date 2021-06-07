@@ -1,5 +1,5 @@
 import React from 'react'
-import MenuMain from './MenuMain'
+import MenuMain from '../MenuMain'
 const HeaderBottom = () => {
     return (
 

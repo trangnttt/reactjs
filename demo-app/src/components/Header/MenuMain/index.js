@@ -1,10 +1,11 @@
 import React from 'react'
+import './styles/_menuMain.scss'
 const MenuMain = () => {
     return (
         <div className="wrapper">
             <div className="menu-main">
                 <div className="menu-main__dropdown is-active">
-                    <button className="drop-btn">
+                    <button className="menu-main__dropdown-btn">
                         <i className="fa fa-align-left"></i> All Departments
                     </button>
                     <div className="menu-main__dropdown--content">
@@ -14,7 +15,7 @@ const MenuMain = () => {
                     </div>
                 </div>
                 <div className="menu-main__dropdown">
-                    <button className="drop-btn">Multilevel
+                    <button className="menu-main__dropdown-btn">Multilevel
                     </button>
                     <div className="menu-main__dropdown--content">
                         <a className="menu-main__dropdown-link" href="#">Link 1</a>
@@ -23,7 +24,7 @@ const MenuMain = () => {
                     </div>
                 </div>
                 <div className="menu-main__dropdown">
-                    <button className="drop-btn">Mega Menu
+                    <button className="menu-main__dropdown-btn">Mega Menu
                     </button>
                     <div className="menu-main__dropdown--content">
                         <a className="menu-main__dropdown-link" href="#">Link 1</a>
@@ -32,7 +33,7 @@ const MenuMain = () => {
                     </div>
                 </div>
                 <div className="menu-main__dropdown">
-                    <button className="drop-btn">Fullwidth
+                    <button className="menu-main__dropdown-btn">Fullwidth
                     </button>
                     <div className="menu-main__dropdown--content">
                         <a className="menu-main__dropdown-link" href="#">Link 1</a>
@@ -40,14 +41,14 @@ const MenuMain = () => {
                         <a className="menu-main__dropdown-link" href="#">Link 3</a>
                     </div>
                 </div>
-                <div className="menu-main-right">
+                <div className="menu-main--right">
                     <a className="menu-main__link" href="#search">
                         <i className="fa fa-volume-control-phone menu-main__icon"></i>
-                        <span>1.800.555.6789</span>
+                        1.800.555.6789
                     </a>
                     <a className="menu-main__link is-active" href="#about">
                         <i className="fa fa-commenting-o menu-main__icon"></i>
-                        <span>BLOG</span>
+                       BLOG
                     </a>
                 </div>
             </div>

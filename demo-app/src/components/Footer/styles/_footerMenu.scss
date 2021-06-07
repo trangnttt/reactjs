@@ -1,0 +1,44 @@
+.footer-menu {
+    padding: 20px;
+    background-color: rgba(248, 248, 248, 1);
+
+    &__row {
+        display: grid;
+        grid-gap: 1rem; 
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    &__column {
+        border-right: 1px solid rgba(226, 226, 226, 1);
+
+        &:last-child {
+            border-right: 0;
+        }
+    }
+
+    &__title {
+        font-size: 14px;
+        font-weight: 600;
+        width: 115px;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgba(233, 102, 49, 1);
+    }
+
+    &__sub {
+        font-size: 15px;
+        color: rgba(105, 105, 115, 1);
+    }
+
+    &__list {
+        color: rgba(13, 82, 214, 1);
+    }
+
+    &__item {
+        margin-bottom: 10px;
+
+        &:hover {
+            color: orange;
+        }
+    }
+}

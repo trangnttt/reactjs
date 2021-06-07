@@ -1,0 +1,45 @@
+.header-mid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+
+    &__logo {
+        width: 205px;
+        margin: 0;
+    }
+}
+.menu-mid {
+    
+    &-list{
+
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 100%;
+
+        &__item {
+            margin: 0 5px;
+        }
+
+        &__link {
+            flex-direction: column;
+            padding: 5px;
+            font-size: 26px;
+        }
+
+        &__icon {
+            color: rgba(105, 105, 115, 1);
+            margin: 0px;
+            margin-top: 30px;
+        }
+
+        &__text {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: block;
+            font-size: 11px;
+        }
+    }
+}
