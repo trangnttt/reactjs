@@ -85,16 +85,14 @@
 
     &-bottom {
         background-color: rgba(13, 82, 214, 1);
+
         .is-active {
-            .drop-btn {
-                color: rgba(51, 51, 51, 1) !important;
-                
-                &:hover{
-                    color: #fff !important;
-                }
-            }
             color: rgba(51, 51, 51, 1) !important;
             background-color: rgba(254, 212, 48, 1);
+            
+            .drop-btn {
+                color: rgba(51, 51, 51, 1) !important;
+            }
         }
         .menu-main {
             overflow: hidden;
@@ -159,7 +157,7 @@
                 &:hover {
                     .drop-btn {
                         color: rgba(51, 51, 51, 1);
-                        background-color: rgba(255, 255, 255, 1)    ;
+                        background-color: rgba(240,242,245,1);
                     }
                     .menu-main__dropdown--content {
                         display: block;
