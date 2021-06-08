@@ -1,0 +1,84 @@
+.slide-category {
+    flex: 1 0 18%;
+    margin: 5px;
+    border: 1px solid $black-200;
+    max-width: 300px;
+    text-align: center;
+    font-family: arial;
+
+    &__body {
+        padding: 10px;
+        background-color: $white;
+        text-align: left;
+    }
+
+    &__mark {
+        background: $gray-300;
+        padding: 10px 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        font-size: 14px;
+        color: $gray;
+
+        &--label {
+            text-decoration: underline !important;
+
+            &:hover {
+                text-decoration: none !important;
+                color: $red;
+            }
+        }
+    }
+    &__title {
+        font-weight: 600;
+        color: $black;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__price {
+        color: $gray;
+        font-size: 18px;
+    }
+
+    &__qty {
+        min-height: 28px;
+        border-radius: 2px;
+        text-align: center;
+        font-size: 13px;
+        max-width: 50px;
+        border: 1px solid $black-200;
+        margin: 20px 0;
+
+        &::-webkit-inner-spin-button {
+            opacity: 1;
+            padding: 10px 0;
+        }
+    }
+    
+    &__add {
+        background: $blue-400;
+        border-width: 2px;
+        padding: 8px;
+        border-radius: 3px;
+        margin: 0 20px;
+        color: $white !important;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &__icon{
+        font-size: 22px;
+        margin: 0 10px;
+
+        &:hover{
+            color: $blue;
+        }
+    }
+}

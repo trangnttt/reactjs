@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles/header.scss'
+import styles from './styles/header.module.scss'
 
 import HeaderTop from './HeaderTop'
 import HeaderMiddle from './HeaderMiddle'
@@ -8,7 +8,7 @@ import HeaderBottom from './HeaderBottom'
 const Header = () => {
     return (
         <>
-            <div className="header">
+            <div className={styles['header']}>
                 <HeaderTop />
                 <HeaderMiddle />
                 <HeaderBottom />

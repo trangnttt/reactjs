@@ -1,19 +1,17 @@
 // abstracts
-@import './abstracts/abstracts';
+@import './scss/abstracts/abstracts';
 
 // base
-@import './base/reset';
-@import './base/fonts';
-@import './base/base';
+@import './scss/base/reset';
+@import './scss/base/fonts';
+@import './scss/base/base';
 
 // layout
-@import './layout/container';
-@import './layout/sec';
-@import './layout/wrapper';
-@import './layout/header';
-// @import './layout/footer';
+@import './scss/layout/container';
+@import './scss/layout/sec';
+@import './scss/layout/header';
 
 // components
-// @import './components/menuTop';
-@import './components/searchDropdown';
-@import './components/tooltip';
+@import './scss/components/tabs';
+@import './scss/components/tooltip';
+@import './scss/components/grid';

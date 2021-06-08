@@ -1,73 +1,74 @@
 import React from 'react'
-
+import styles from '../styles/footer.module.scss'
+import { Link } from 'react-router-dom'
 const FooterMenu = () => {
     return (
-        <div className="footer-menu">
-            <div className="wrapper">
-                <div className="footer-menu__row">
-                    <div className="footer-menu__column">
-                        <h3 className="footer-menu__title">About Us</h3>
-                        <ul className="footer-menu__list">
-                            <li className="footer-menu__item">
-                                <a href="#">Menu 1</a>
+        <div className={styles['footer-menu']}>
+            <div className="container">
+                <div className={styles['footer-menu__row']}>
+                    <div className={styles['footer-menu__column']}>
+                        <h3 className={styles['footer-menu__title']}>About Us</h3>
+                        <ul className={styles['footer-menu__list']}>
+                            <li className={styles['footer-menu__item']}>
+                                <Link to="#">Menu 1</Link>
                             </li>
-                            <li className="footer-menu__item">
-                                <a href="#">Menu 1</a>
+                            <li className={styles['footer-menu__item']}>
+                                <Link to="#">Menu 1</Link>
                             </li>
-                            <li className="footer-menu__item">
-                                <a href="#">Menu 1</a>
+                            <li className={styles['footer-menu__item']}>
+                                <Link to="#">Menu 1</Link>
                             </li>
-                            <li className="footer-menu__item">
-                                <a href="#">Menu 1</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="footer-menu__column">
-                        <h3 className="footer-menu__title">About Us</h3>
-                        <ul className="footer-menu__list">
-                            <li className="footer-menu__item">
-                                <a href="#">Menu 1</a>
-                            </li>
-                            <li className="footer-menu__item">
-                                <a href="#">Menu 1</a>
-                            </li>
-                            <li className="footer-menu__item">
-                                <a href="#">Menu 1</a>
-                            </li>
-                            <li className="footer-menu__item">
-                                <a href="#">Menu 1</a>
+                            <li className={styles['footer-menu__item']}>
+                                <Link to="#">Menu 1</Link>
                             </li>
                         </ul>
                     </div>
-                    <div className="footer-menu__column">
-                        <h3 className="footer-menu__title">About Us</h3>
-                        <ul className="footer-menu__list">
-                            <li className="footer-menu__item">
-                                <a href="#">Menu 1</a>
+                    <div className={styles['footer-menu__column']}>
+                        <h3 className={styles['footer-menu__title']}>About Us</h3>
+                        <ul className={styles['footer-menu__list']}>
+                            <li className={styles['footer-menu__item']}>
+                                <Link to="#">Menu 1</Link>
                             </li>
-                            <li className="footer-menu__item">
-                                <a href="#">Menu 1</a>
+                            <li className={styles['footer-menu__item']}>
+                                <Link to="#">Menu 1</Link>
                             </li>
-                            <li className="footer-menu__item">
-                                <a href="#">Menu 1</a>
+                            <li className={styles['footer-menu__item']}>
+                                <Link to="#">Menu 1</Link>
                             </li>
-                            <li className="footer-menu__item">
-                                <a href="#">Menu 1</a>
+                            <li className={styles['footer-menu__item']}>
+                                <Link to="#">Menu 1</Link>
                             </li>
                         </ul>
                     </div>
-                    <div className="footer-menu__column">
-                        <h3 className="footer-menu__title">About Us</h3>
-                        <p className="footer-menu__sub">Stay up to date with news and promotions by signing up for our newsletter</p>
-                        <div className="footer-search">
+                    <div className={styles['footer-menu__column']}>
+                        <h3 className={styles['footer-menu__title']}>About Us</h3>
+                        <ul className={styles['footer-menu__list']}>
+                            <li className={styles['footer-menu__item']}>
+                                <Link to="#">Menu 1</Link>
+                            </li>
+                            <li className={styles['footer-menu__item']}>
+                                <Link to="#">Menu 1</Link>
+                            </li>
+                            <li className={styles['footer-menu__item']}>
+                                <Link to="#">Menu 1</Link>
+                            </li>
+                            <li className={styles['footer-menu__item']}>
+                                <Link to="#">Menu 1</Link>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className={styles['footer-menu__column']}>
+                        <h3 className={styles['footer-menu__title']}>About Us</h3>
+                        <p className={styles['footer-menu__sub']}>Stay up to date with news and promotions by signing up for our newsletter</p>
+                        <div className={styles['footer-search']}>
                             <form action="#">
-                                <div className="footer-search__group search">
-                                    <input className="search-input" type="text" placeholder="Search.." name="search" />
-                                    <button className="search-btn" type="submit"><i className="fa fa-envelope-square"></i> Send</button>
+                                <div className={styles['footer-search__group']}>
+                                    <input className={styles['search-input']} type="text" placeholder="Search.." name="search" />
+                                    <button className={styles['search-btn']} type="submit"><i className="fa fa-envelope-square"></i> Send</button>
                                 </div>
-                                <div className="footer-search__group search-check">
+                                <div className={`${styles['footer-search__group']} ${styles['search-check']}`}>
                                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-                                    <label className="search-check__name">I have read and agree to the <a href="#">Privacy Policy</a></label>
+                                    <label className={styles['search-check__name']}>I have read and agree to the <Link to="#">Privacy Policy</Link></label>
                                 </div>
                             </form>
                         </div>

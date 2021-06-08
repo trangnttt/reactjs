@@ -1,19 +1,21 @@
 import React from 'react'
+import styles from '../styles/footer.module.scss'
+
 const FooterIcons = () => {
     return (
-        <div className="footer-icon">
-            <div className="wrapper">
-                <ul className="footer-icon__list">
-                    <li className="footer-icon__item tooltip"><i className="fa fa-facebook"></i>
+        <div className={styles['footer-icon']}>
+            <div className="container">
+                <ul className={styles['footer-icon__list']}>
+                    <li className={`${styles['footer-icon__item']} tooltip`}><i className="fa fa-facebook"></i>
                         <span className="tooltip-text"> Facebook</span>
                     </li>
-                    <li className="footer-icon__item tooltip"><i className="fa fa-facebook"></i>
+                    <li className={`${styles['footer-icon__item']} tooltip`}><i className="fa fa-facebook"></i>
                         <span className="tooltip-text"> Facebook</span>
                     </li>
-                    <li className="footer-icon__item tooltip"><i className="fa fa-facebook"></i>
+                    <li className={`${styles['footer-icon__item']} tooltip`}><i className="fa fa-facebook"></i>
                         <span className="tooltip-text"> Facebook</span>
                     </li>
-                    <li className="footer-icon__item tooltip"><i className="fa fa-facebook"></i>
+                    <li className={`${styles['footer-icon__item']} tooltip`}><i className="fa fa-facebook"></i>
                         <span className="tooltip-text"> Facebook</span>
                     </li>
                 </ul>

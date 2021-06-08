@@ -35,7 +35,7 @@ module.exports = {
         {
           loader: 'sass-resources-loader',
           options: {
-            resources: './src/assets/abstracts/_abstracts.scss',
+            resources: './src/assets/scss/abstracts/_abstracts.scss',
           }
         }],
       },

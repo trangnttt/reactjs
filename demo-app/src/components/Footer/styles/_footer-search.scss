@@ -5,36 +5,38 @@
         margin-bottom: 10px;
     }
 
-    .search {
-        &-input {
-            padding: 6px;
-            margin: 10px 0;
-            font-size: 17px;
-            border: 1px solid $gray-300;
-            border-right: 0;
-            border-radius: 3px;
-        }
+}
 
-        &-btn {
-            padding: 9px;
-            margin: 10px 0;
-            margin-right: 16px;
-            background: $blue;
-            font-size: 14px;
-            border-radius: 3px;
-            color: $white;
-            position: absolute;
-            cursor: pointer;
-            border: 0;
-        }
+.search {
+    &-input {
+        padding: 6px;
+        margin: 10px 0;
+        font-size: 17px;
+        border: 1px solid $gray-300;
+        border-right: 0;
+        border-radius: 3px;
+    }
 
-        &-check {
-            display: flex;
+    &-btn {
+        padding: 9px;
+        margin: 10px 0;
+        margin-right: 16px;
+        background: $blue;
+        font-size: 14px;
+        border-radius: 3px;
+        color: $white;
+        position: absolute;
+        cursor: pointer;
+        border: 0;
+    }
 
-            &__name {
-                font-size: 11px;
-                margin-left: 5px;
-            }
+    &-check {
+        display: flex;
+
+        &__name {
+            font-size: 11px;
+            margin-left: 5px;
+            color: $gray;
         }
     }
 }

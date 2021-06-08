@@ -1,9 +1,10 @@
 import React from 'react'
+import styles from '../styles/header.module.scss'
 const SearchHeader = () => {
     return (
-        <div className="header-search">
-            <input type="text" className="header-search__key" placeholder="Search" />
-            <button type="submit" className="header-search__btn">
+        <div className={styles['header-search']}>
+            <input type="text" className={styles['header-search__key']} placeholder="Search" />
+            <button type="submit" className={styles['header-search__btn']}>
                 <i className="fa fa-search"></i>
             </button>
         </div>

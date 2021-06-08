@@ -1,9 +1,17 @@
 import React from 'react'
-
+import Advertise from './Advertise'
+import Service from './Service'
+import WhyBuy from './WhyBuy'
+import FeaturedCategory from './FeaturedCategory'
+import BrandLogo from './BrandLogo'
 const HomeComponent = () => {
     return(
         <>
-           <h1>This is home page</h1>
+           <Advertise />
+           <Service />
+           <WhyBuy />
+           <FeaturedCategory />
+           <BrandLogo />
         </>
     )
 }

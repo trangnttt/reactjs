@@ -1,10 +1,12 @@
 import React from 'react'
+import styles from '../styles/header.module.scss'
+import { Link } from 'react-router-dom'
 const LogoHeader = () => {
     return (
-        <div className="header-mid__logo">
-            <a href="/">
+        <div className={styles['header-mid__logo']}>
+            <Link to="/">
                 <img src="/assets/images/logo.png"></img>
-            </a>
+            </Link>
         </div>
     )
 }

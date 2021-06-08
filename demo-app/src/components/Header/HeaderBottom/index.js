@@ -4,7 +4,7 @@ const HeaderBottom = () => {
     return (
 
         <div className="header-bottom">
-            <div className="wrapper">
+            <div className="container">
                 <MenuMain />
             </div>
         </div>

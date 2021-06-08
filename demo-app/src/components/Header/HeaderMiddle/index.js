@@ -3,11 +3,12 @@ import LogoHeader from './Logo'
 import SearchHeader from './Search'
 import MenuIconHeader from './MenuIcon'
 import CartHeader from './Cart'
+import styles from '../styles/header.module.scss'
 const HeaderMiddle = () => {
     return (
         
-        <div className="wrapper">
-              <div className="header-mid">
+        <div className="container">
+              <div className={styles['header-mid']}>
               <LogoHeader />
                <SearchHeader />
                <MenuIconHeader />

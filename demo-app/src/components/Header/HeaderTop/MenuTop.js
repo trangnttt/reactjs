@@ -1,51 +1,52 @@
 import React from "react"
-
+import styles from '../styles/header.module.scss'
+import { Link } from 'react-router-dom'
 const MenuTop = () => {
     return (
-        <ul className="menu-top">
-            <li className="menu-top__item">
-                <a className="menu-top__link" href="#">
-                    <i className="fa fa-home menu-top__icon"></i>
+        <ul className={styles['menu-top']}>
+            <li className={styles['menu-top__item']}>
+                <Link className={styles['menu-top__link']} to="#">
+                    <i className={`${styles['menu-top__icon']} fa fa-home`}></i>
                     <span>Home</span>
-                </a>
+                </Link>
             </li>
-            <li className="menu-top__item">
-                <a className="menu-top__link" href="#">
-                    <i className="fa fa-anchor menu-top__icon"></i>
+            <li className={styles['menu-top__item']}>
+                <Link className={styles['menu-top__link']} to="#">
+                    <i className={`${styles['menu-top__icon']} fa fa-anchor`}></i>
                     <span>About Us</span>
-                </a>
+                </Link>
             </li>
-            <li className="menu-top__item">
-                <a className="menu-top__link" href="#">
-                    <i className="fa fa-envelope menu-top__icon"></i>
+            <li className={styles['menu-top__item']}>
+                <Link className={styles['menu-top__link']} to="#">
+                    <i className={`${styles['menu-top__icon']} fa fa-envelope`}></i>
                     <span>Contact</span>
-                </a>
+                </Link>
             </li>
-            <li className="menu-top__item">
-                <a className="menu-top__link" href="#">
-                    <i className="fa fa-question-circle-o menu-top__icon"></i>
+            <li className={styles['menu-top__item']}>
+                <Link className={styles['menu-top__link']} to="#">
+                    <i className={`${styles['menu-top__icon']} fa fa-question-circle-o`}></i>
                     <span>FAQ</span>
-                </a>
-                <ul className="dropdown-menu">
-                    <li className="dropdown-menu__item">
-                        <a className="dropdown-menu__link" href="#">
-                            <i className="fa fa-arrow-right menu-top__icon"></i>
+                </Link>
+                <ul className={styles['dropdown-menu']}>
+                    <li className={styles['dropdown-menu__item']}>
+                        <Link className={styles['dropdown-menu__link']} to="#">
+                            <i className={`${styles['menu-top__icon']} fa fa-arrow-right`}></i>
                             <span> Create</span>
-                        </a>
+                        </Link>
                     </li>
 
-                    <li className="dropdown-menu__item">
-                        <a className="dropdown-menu__link" href="#">
-                            <i className="fa fa-compass menu-top__icon"></i>
+                    <li className={styles['dropdown-menu__item']}>
+                        <Link className={styles['dropdown-menu__link']} to="#">
+                            <i className={`${styles['menu-top__icon']} fa fa-compass`}></i>
                             <span> Unlimited</span>
-                        </a>
+                        </Link>
                     </li>
 
-                    <li className="dropdown-menu__item">
-                        <a className="dropdown-menu__link" href="#">
-                            <i className="fa fa-dedent menu-top__icon"></i>
+                    <li className={styles['dropdown-menu__item']}>
+                        <Link className={styles['dropdown-menu__link']} to="#">
+                            <i className={`${styles['menu-top__icon']} fa fa-dedent`}></i>
                             <span>Menus</span>
-                        </a>
+                        </Link>
                     </li>
 
                 </ul>

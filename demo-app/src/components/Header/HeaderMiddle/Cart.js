@@ -1,15 +1,16 @@
 import React from 'react'
-
+import styles from '../styles/header.module.scss'
+import { Link } from 'react-router-dom'
 const CartHeader = () => {
     return (
-        <div className="dropdown-cart">
-            <a className="dropdown-cart__link" href="/">
-                <span className="dropdown-cart__text">0 item(s) - $0.00</span>
-                <span className="dropdown-cart__icon">
+        <div className={styles['dropdown-cart']}>
+            <Link className={styles['dropdown-cart__link']} to ="/">
+                <span className={styles['dropdown-cart__text']}>0 item(s) - $0.00</span>
+                <span className={styles['dropdown-cart__icon']}>
                  <i className="fa fa-shopping-cart"> </i>
                 </span>
-            </a>
-            <div className="dropdown-cart--content">
+            </Link>
+            <div className={styles['dropdown--cart--content']}>
                 <p>Your shopping cart is empty!</p>
             </div>
         </div>
