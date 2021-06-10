@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import ProductService from '@/services/About'
 import LoadingPage from '@/components/LoadingPage'
-const divStyle = {
-    marginTop: '150px',
-};
 
 function About() {
     const [data, setData] = useState({});
@@ -22,9 +19,8 @@ function About() {
             fetchData();
         }, []
     )
-    console.log('data about', data)
     return (
-        <div className="about" style={divStyle}>
+        <div className="main">
             <h2 className="about__title">About</h2>
             <p className="about__content">This is about page</p>
             <p>Data is:</p>

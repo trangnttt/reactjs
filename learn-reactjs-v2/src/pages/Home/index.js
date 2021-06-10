@@ -20,7 +20,6 @@ function Home() {
 
   return (
     <div className="main">
-
       <button onClick={onButtonClick} ref={btnRef}  >change btn blue</button>
 
       <Slides />

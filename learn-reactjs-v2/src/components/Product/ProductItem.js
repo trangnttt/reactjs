@@ -37,7 +37,6 @@ const ProductItem = () => {
             const result = await axios(
                 'https://reqres.in/api/users',
             );
-            console.log(result.data.data)
             setData(result.data.data);
         };
         fetchData();

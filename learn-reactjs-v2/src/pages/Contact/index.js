@@ -2,7 +2,7 @@ import React from 'react'
 import LoadingPage from '@/components/LoadingPage'
 function Contact() {
     return (
-        <div>
+        <div className="main">
             <h1>Contact</h1>
             <LoadingPage />
         </div>

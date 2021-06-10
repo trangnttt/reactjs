@@ -1,4 +1,4 @@
-import React, { createContext, useState, useReducer } from 'react'
+import React, { createContext, useReducer } from 'react'
 import { CartReducer } from '@/reducers/cart/reducers'
 import {types} from '@/reducers/cart/typesCart'
 
