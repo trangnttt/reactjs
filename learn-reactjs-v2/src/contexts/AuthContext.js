@@ -1,7 +1,7 @@
 import React, { createContext, useEffect, useState } from 'react'
-// import { Redirect, useHistory } from "react-router-dom";
-// import LoginService from '@/services/Login'
+import axios from 'axios'
 
+import LoginService from '@/services/Login'
 export const AuthContext = createContext();
 const AuthProvider = (props) => {
 
@@ -10,7 +10,7 @@ const AuthProvider = (props) => {
         password: "123"
     }
 
-    const [auth, setAuth] = useState({ email: "", password: "", isAuth: false})
+    const [auth, setAuth] = useState({ email: "", password: "", isAuth: false })
     const [error, setError] = useState("");
 
     const handleEmailChange = (e) => {
@@ -24,40 +24,34 @@ const AuthProvider = (props) => {
 
     const handleLogin = (e) => {
         e.preventDefault();
-        // const item =  {};
-        // item.name = auth.email;
-        // item.year = auth.password;
-        
-        // const fetchData = async () => {
-        //     const result = await (
-        //         LoginService.getAll(),
-        //         {
-        //             headers: {
-        //                 "Content-Type": "application/json",
-        //                 "Accept": "application/json"
-        //             },
-        //             body:JSON.stringify(item)
-        //         }
-        //     )
-        //     result = await result.json()
-        //     localStorage.setItem('user-info', JSON.stringify(result));
-        //     console.log('result', result)
-
-        // };
-        // fetchData();
-
-        if (auth.email == adminUser.email && auth.password == adminUser.password) {
-            setError("")
-            setAuth({
-                email: auth.email,
-                password: auth.password,
-                isAuth: true
-            })
-            localStorage.setItem('email', auth.email);
+        const fetchData = async () => {
+            const article = { 
+                email: "eve.holt@reqres.in",
+                password: "cityslicka"
+            };
+            // const response = await axios.post('https://reqres.in/api/login', article);
+            // console.log(response)
+            try {
+                const response = await LoginService.postLogin(article)
+                console.log('response', response)
+            } catch(e) {
+                console.log('errr', e.message)
+            }
         }
-        else {
-            setError('Login Fail')
-        }
+        fetchData();
+
+        // if (auth.email == adminUser.email && auth.password == adminUser.password) {
+        //     setError("")
+        //     setAuth({
+        //         email: auth.email,
+        //         password: auth.password,
+        //         isAuth: true
+        //     })
+        //     localStorage.setItem('email', auth.email);
+        // }
+        // else {
+        //     setError('Login Fail')
+        // }
     }
 
     const handleLogout = () => {

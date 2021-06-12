@@ -1,14 +1,17 @@
-@import "./abstracts/classes.scss";
-@import "./abstracts/colors.scss";
-@import "./abstracts/mixins.scss";
-@import "./abstracts/placeholders.scss";
-@import "./abstracts/variables.scss";
+// abstracts
+@import './abstracts/abstracts';
 
-@import "./base/base.scss";
-@import "./base/reset.scss";
+// base
+@import './base/reset';
+@import './base/fonts';
+@import './base/base';
 
+// layout
+@import './layout/container';
+@import './layout/sec';
+@import './layout/header';
 
-@import "./components/card.scss";
-@import "./components/slider.scss";
-@import "./components/modal.scss";
-@import "./components/table.scss";
+// components
+@import './components/tabs';
+@import './components/tooltip';
+@import './components/grid';

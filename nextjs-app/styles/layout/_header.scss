@@ -1,7 +1,11 @@
-.l-header {
-    &__logo {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+.header {
+    background: icon-facebook(#f00) repeat center center ;
+
+    &-bottom {
+        background-color: rgba(13, 82, 214, 1);
     }
+}
+
+.default {
+    background: icon-facebook(orange) repeat center center ;
 }

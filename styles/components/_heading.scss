@@ -1,0 +1,16 @@
+.heading02 {
+  font-size: $h2;
+  margin-bottom: convert-rem(30);
+  position: relative;
+
+  &::after {
+    content: "";
+    width: convert-rem(50);
+    height: convert-rem(5);
+    background-color: $blue;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+  }
+}
