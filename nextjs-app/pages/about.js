@@ -10,4 +10,5 @@ const About = () => {
 }
 
 About.layout = "about";
+About.middleware = ["admin","editor"]
 export default About

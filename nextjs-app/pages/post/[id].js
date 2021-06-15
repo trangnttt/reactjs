@@ -1,5 +1,5 @@
 import React from 'react'
-
+import PostService from '@/services/Post'
 const PostDetail = ({ post }) => {
     return (
         <div className="container">
@@ -8,17 +8,17 @@ const PostDetail = ({ post }) => {
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>UserID</th>
-                        <th>Title</th>
-                        <th>Body</th>
+                        <th>Email</th>
+                        <th>First name</th>
+                        <th>Last name</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr key={post.id}>
                         <td>{post.id}</td>
-                        <td>{post.userId}</td>
-                        <td>{post.title}</td>
-                        <td>{post.body}</td>
+                        <td>{post.email}  </td>
+                        <td>{post.first_name}</td>
+                        <td>{post.last_name}</td>
                     </tr>
                 </tbody>
 
@@ -31,8 +31,8 @@ export default PostDetail;
 
 
 export async function getStaticPaths() {
-    const res = await fetch('https://jsonplaceholder.typicode.com/posts')
-    const posts = await res.json()
+    const res = await PostService.getAll()
+    const posts = res.data.data;
     const paths = posts.map((post) => (
         {
             params: {
@@ -40,14 +40,13 @@ export async function getStaticPaths() {
             },
         }
     ))
-
     return { paths, fallback: false }
 }
 
 export async function getStaticProps({ params }) {
-    const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${params.id}`)
-    const post = await res.json()
-
+    const id = params.id
+    const res = await PostService.getId(id)
+    const post = res.data.data;
     return { props: { post } }
 }
 
